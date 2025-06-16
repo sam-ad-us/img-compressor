@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelPress Pro | Advanced Image Compression</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>PixelPress Pro | Advanced Image Compression Tool - Reduce File Sizes Online</title>
+    <meta name="description" content="Free online image compressor that reduces file sizes while maintaining quality. Supports JPG, PNG, WEBP formats with advanced compression settings.">
+    <meta name="keywords" content="image compressor, photo optimizer, reduce image size, online image compression, JPG compressor, PNG optimizer, WEBP converter">
+    <meta name="author" content="PixelPress Pro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.yourdomain.com/pixelpress-pro">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="PixelPress Pro | Advanced Image Compression Tool">
+    <meta property="og:description" content="Free online image compressor that reduces file sizes while maintaining quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourdomain.com/pixelpress-pro">
+    <meta property="og:image" content="https://www.yourdomain.com/images/pixelpress-social.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PixelPress Pro",
+      "url": "https://www.yourdomain.com/pixelpress-pro",
+      "description": "Advanced online image compression tool that reduces file sizes while maintaining visual quality.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <style>
         :root {
             --primary: #6C5CE7;
@@ -33,6 +75,7 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
             color: var(--dark);
             min-height: 100vh;
+            line-height: 1.6;
         }
         
         .container {
@@ -68,6 +111,29 @@
             color: var(--gray);
             margin-bottom: 2rem;
             font-weight: 400;
+        }
+        
+        /* Ad Banner */
+        .ad-container {
+            width: 100%;
+            margin: 2rem 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid var(--light-gray);
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         /* Upload Area */
@@ -503,6 +569,22 @@
             padding: 1.5rem;
         }
         
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -541,11 +623,20 @@
             .logo {
                 font-size: 2.2rem;
             }
+            
+            .ad-container {
+                margin: 1rem 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="/">Home</a> &gt; <a href="/tools">Tools</a> &gt; Image Compressor
+        </div>
+        
         <header>
             <div class="logo">
                 <i class="fas fa-compress-alt logo-icon"></i>
@@ -553,6 +644,23 @@
             </div>
             <div class="tagline">Advanced image compression with precise control - Reduce file sizes by up to 90%</div>
         </header>
+        
+        <!-- Top Ad Banner -->
+        <div class="ad-container">
+            <div>
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Ad Unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
         
         <div class="upload-container">
             <div class="upload-area" id="uploadArea">
@@ -563,6 +671,23 @@
                 <button class="btn btn-secondary" onclick="document.getElementById('fileInput').click()">
                     <i class="fas fa-folder-open"></i> Browse Files
                 </button>
+            </div>
+        </div>
+        
+        <!-- Middle Ad Banner (Horizontal) -->
+        <div class="ad-container">
+            <div>
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Ad Unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
         
@@ -650,6 +775,23 @@
             </button>
         </div>
         
+        <!-- Bottom Ad Banner (Horizontal) -->
+        <div class="ad-container" id="bottomAd" style="display: none;">
+            <div>
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Ad Unit -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        
         <div class="results-panel" id="resultsPanel">
             <div class="results-header">
                 <h2 class="results-title">Compression Results</h2>
@@ -661,7 +803,7 @@
             <div class="comparison">
                 <div class="comparison-item">
                     <h3 class="comparison-title">Original Image</h3>
-                    <img id="originalPreview" class="image-preview">
+                    <img id="originalPreview" class="image-preview" alt="Original image preview">
                     <div class="image-stats">
                         <div class="stat-row">
                             <span class="stat-label">File Size:</span>
@@ -679,7 +821,7 @@
                 </div>
                 <div class="comparison-item">
                     <h3 class="comparison-title">Compressed Image</h3>
-                    <img id="compressedPreview" class="image-preview">
+                    <img id="compressedPreview" class="image-preview" alt="Compressed image preview">
                     <div class="image-stats">
                         <div class="stat-row">
                             <span class="stat-label">File Size:</span>
@@ -714,9 +856,32 @@
             </div>
         </div>
         
+        <!-- Features Section for SEO -->
+        <section class="controls-panel" style="margin-top: 3rem;">
+            <h2 class="panel-title">Why Use PixelPress Pro Image Compressor?</h2>
+            <div class="control-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="control-group">
+                    <h3><i class="fas fa-lock" style="color: var(--primary); margin-right: 10px;"></i> Privacy Focused</h3>
+                    <p>All processing happens in your browser - your images never leave your device, ensuring complete privacy.</p>
+                </div>
+                <div class="control-group">
+                    <h3><i class="fas fa-tachometer-alt" style="color: var(--primary); margin-right: 10px;"></i> Fast Processing</h3>
+                    <p>Optimized algorithms provide quick compression without compromising on quality.</p>
+                </div>
+                <div class="control-group">
+                    <h3><i class="fas fa-sliders-h" style="color: var(--primary); margin-right: 10px;"></i> Advanced Controls</h3>
+                    <p>Precise quality, size, and dimension controls to get exactly the results you need.</p>
+                </div>
+                <div class="control-group">
+                    <h3><i class="fas fa-file-image" style="color: var(--primary); margin-right: 10px;"></i> Multiple Formats</h3>
+                    <p>Supports JPG, PNG, and modern WebP formats with automatic conversion.</p>
+                </div>
+            </div>
+        </section>
+        
         <footer>
             <p>PixelPress Pro - Advanced image compression tool. All processing happens in your browser - your images never leave your device.</p>
-            <p>© 2023 PixelPress Pro. All rights reserved.</p>
+            <p>© 2023 PixelPress Pro. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
         </footer>
     </div>
     
@@ -752,6 +917,7 @@
         const progressPercent = document.getElementById('progressPercent');
         const errorMessage = document.getElementById('errorMessage');
         const errorText = document.getElementById('errorText');
+        const bottomAd = document.getElementById('bottomAd');
         
         // Variables
         let currentFile = null;
@@ -862,6 +1028,7 @@
                     // Hide results if showing
                     resultsPanel.style.display = 'none';
                     errorMessage.style.display = 'none';
+                    bottomAd.style.display = 'none';
                 };
                 img.src = e.target.result;
             };
@@ -993,10 +1160,14 @@
                                 controlsPanel.style.display = 'none';
                                 resultsPanel.style.display = 'block';
                                 progressContainer.style.display = 'none';
+                                bottomAd.style.display = 'block';
                                 
                                 // Reset button
                                 compressBtn.disabled = false;
                                 compressBtn.innerHTML = '<i class="fas fa-compress-alt"></i> Compress Image';
+                                
+                                // Track successful compression (for analytics)
+                                trackCompression(originalImageData.size, blob.size, currentFormat);
                             }, 500);
                         };
                         reader.readAsDataURL(blob);
@@ -1066,6 +1237,7 @@
             progressContainer.style.display = 'none';
             errorMessage.style.display = 'none';
             uploadArea.style.display = 'block';
+            bottomAd.style.display = 'none';
         }
         
         function downloadImage() {
@@ -1092,6 +1264,9 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+            
+            // Track download event
+            trackDownload();
         }
         
         function shareImage() {
@@ -1123,6 +1298,35 @@
                 alert('Sharing not supported in your browser. Please download the image instead.');
             }
         }
+        
+        // Analytics/tracking functions (replace with your actual tracking code)
+        function trackCompression(originalSize, compressedSize, format) {
+            console.log(`Compression tracked: ${originalSize} → ${compressedSize} (${format})`);
+            // Replace with your analytics code (e.g., Google Analytics, etc.)
+        }
+        
+        function trackDownload() {
+            console.log('Download tracked');
+            // Replace with your analytics code
+        }
+        
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            updateQualityValue();
+            updateResizeValue();
+            
+            // Lazy load non-critical resources
+            const fontAwesomeCSS = document.createElement('link');
+            fontAwesomeCSS.rel = 'stylesheet';
+            fontAwesomeCSS.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+            document.head.appendChild(fontAwesomeCSS);
+            
+            // Load Google Fonts
+            const googleFontsCSS = document.createElement('link');
+            googleFontsCSS.rel = 'stylesheet';
+            googleFontsCSS.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
+            document.head.appendChild(googleFontsCSS);
+        });
     </script>
 </body>
 </html>
